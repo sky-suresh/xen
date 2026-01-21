@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "rg1" {
     name = "prodrg"
     location = "east us"
     tags = {
-      "env" = "timmy"
+      "env" = "tis"
     }
     
 }
