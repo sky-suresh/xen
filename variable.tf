@@ -2,8 +2,7 @@ resource "azurerm_resource_group" "rg1" {
     name = "prodrg"
     location = "east us"
     tags = {
-      "env" = "pommf"
-    }
+      "env" = "fort"
     
 }
 
@@ -11,7 +10,7 @@ resource "azurerm_virtual_network" "vnet1" {
   name                = "prodvnet"
   location            = azurerm_resource_group.rg1.location
   resource_group_name = azurerm_resource_group.rg1.name
-  address_space       = ["10.0.0.0/16"]
+  address_space       = ["10.0.0.0/18"]
 
 }
 
